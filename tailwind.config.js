@@ -6,6 +6,12 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", "Sans-serif"],
       },
+      width: {
+        "1140": "72rem",
+      },
+      backgroundImage: {
+        "hero-banner": "url('/src/assets/img/banner/hero.jpg')"
+      }
     },
   },
   plugins: [
