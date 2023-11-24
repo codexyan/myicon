@@ -6,7 +6,7 @@ const categories = ref({
     Documentation: [
         {
             id: 1,
-            thumbnail: "/src/assets/img/solution/s-graduation.png",
+            thumbnail: "~/src/assets/img/solution/s-graduation.png",
             title: "Graduation Packages",
             service_one: "Unlimitied Photoshot",
             service_two: "Cinematic Videos",
@@ -16,7 +16,7 @@ const categories = ref({
         },
         {
             id: 2,
-            thumbnail: "/src/assets/img/solution/s-wedding.png",
+            thumbnail: "~/src/assets/img/solution/s-wedding.png",
             title: "Wedding Packages",
             service_one: "Unlimitied Photoshot",
             service_two: "Cinematic Videos",
@@ -26,7 +26,7 @@ const categories = ref({
         },
         {
             id: 3,
-            thumbnail: "/src/assets/img/solution/s-enterprise.png",
+            thumbnail: "~/src/assets/img/solution/s-enterprise.png",
             title: "Enterprise Packages",
             service_one: "Company Profiles",
             service_two: "Tour & Travel",
@@ -38,7 +38,7 @@ const categories = ref({
     SMM: [
         {
             id: 1,
-            thumbnail: "/src/assets/img/solution/coming-soon.png",
+            thumbnail: "~/src/assets/img/solution/coming-soon.png",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -48,7 +48,7 @@ const categories = ref({
         },
         {
             id: 2,
-            thumbnail: "/src/assets/img/solution/coming-soon.png",
+            thumbnail: "~/src/assets/img/solution/coming-soon.png",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -58,7 +58,7 @@ const categories = ref({
         },
         {
             id: 3,
-            thumbnail: "/src/assets/img/solution/coming-soon.png",
+            thumbnail: "~/src/assets/img/solution/coming-soon.png",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -70,7 +70,7 @@ const categories = ref({
     Invitation: [
         {
             id: 1,
-            thumbnail: "/src/assets/img/solution/coming-soon.png",
+            thumbnail: "~/src/assets/img/solution/coming-soon.png",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -81,7 +81,7 @@ const categories = ref({
         },
         {
             id: 2,
-            thumbnail: "/src/assets/img/solution/coming-soon.png",
+            thumbnail: "~/src/assets/img/solution/coming-soon.png",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -92,7 +92,7 @@ const categories = ref({
         },
         {
             id:3,
-            thumbnail: "/src/assets/img/solution/coming-soon.png",
+            thumbnail: "~/src/assets/img/solution/coming-soon.png",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -143,7 +143,7 @@ const categories = ref({
                                 class="relative p-3 flex flex-col md:flex-nowrap gap-4">
                                 <div class="thumb-solution md:basis-3/5">
                                     <a :href="'/post/' + post.id">
-                                        <img :src="post.thumbnail" :alt="post.title" class="rounded-md" />
+                                        <img :src="`~/assets${post.thumbnail}`" :alt="post.title" class="rounded-md" />
                                     </a>
                                 </div>
 
