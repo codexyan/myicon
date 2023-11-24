@@ -34,22 +34,22 @@ window.onscroll = function () {
                 <div :class="{ 'block':mobileMenuOpen, 'hidden': !mobileMenuOpen }" class="items-center justify-between sm:hidden w-full md:flex md:w-auto order-4 md:order-1" id="mobile-menu-2">
                     <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-regular">
                         <li>
-                            <RouterLink to="/home"
+                            <RouterLink to="/"
                                 class="block py-2 pl-3 pr-4 text-gray-600 font-light border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0"
                                 aria-current="page">Home</RouterLink>
                         </li>
                         <li>
-                            <RouterLink to="/services"
+                            <RouterLink to="/"
                                 class="block py-2 pl-3 pr-4 text-gray-600 font-light border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
                                 Layanan</RouterLink>
                         </li>
                         <li>
-                            <RouterLink to="/portofolio"
+                            <RouterLink to="/"
                                 class="block py-2 pl-3 pr-4 text-gray-600 font-light border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
                                 Portfolio</RouterLink>
                         </li>
                         <li>
-                            <RouterLink to="/about"
+                            <RouterLink to="/"
                                 class="block py-2 pl-3 pr-4 text-gray-600 font-light border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
                                 Tentang Kami</RouterLink>
                         </li>
@@ -70,7 +70,7 @@ window.onscroll = function () {
                 <div class="hidden sm:block md:order-2">
                     <RouterLink to="/"
                         class="text-white bg-gradient-to-r from-yellow-500 via-amber-500 to-amber-500 text-base py-3 px-8 rounded-sm font-medium">
-                        Konsultasi
+                        Consultation
                     </RouterLink>
                 </div>
             </div>

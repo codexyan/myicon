@@ -1,5 +1,5 @@
 <template>
-    <div id="team">
+    <div id="team" class="md:w-[72rem] mx-auto w-full">
         <div class="bg-white py-24 sm:py-32">
             <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
                 <div class="max-w-2xl">
@@ -25,7 +25,7 @@
                                 src="@/assets/img/team.svg"
                                 alt="">
                             <div>
-                                <h3 class="text-lg font-semibold leading-7 tracking-tight text-gray-900">Mas IKhwal
+                                <h3 class="text-lg font-semibold leading-7 tracking-tight text-gray-900">Mas Ikhwal
                                 </h3>
                                 <p class="text-sm font-semibold leading-6 text-amber-600">CMO</p>
                             </div>
