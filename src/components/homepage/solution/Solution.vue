@@ -10,8 +10,8 @@ const categories = ref({
             title: "Graduation Packages",
             service_one: "Unlimitied Photoshot",
             service_two: "Cinematic Videos",
-            service_three: "Printed Photobook",
-            service_fourth: "Printed Photos and Frame",
+            service_three: "Album Photos",
+            service_fourth: "Printed Photos and Framed",
             service_five: "All File on GD",
         },
         {
@@ -20,8 +20,8 @@ const categories = ref({
             title: "Wedding Packages",
             service_one: "Unlimitied Photoshot",
             service_two: "Cinematic Videos",
-            service_three: "Printed Photobook",
-            service_fourth: "Printed Photos and Frame",
+            service_three: "Album Photos",
+            service_fourth: "Printed Photos and Framed",
             service_five: "All File on GD/FD",
         },
         {
