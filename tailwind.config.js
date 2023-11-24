@@ -10,7 +10,7 @@ module.exports = {
         "1140": "72rem",
       },
       backgroundImage: {
-        "hero-banner": "url('/src/assets/img/banner/hero.jpg')"
+        "hero-banner": "url('/src/assets/img/banner/hero-banner-1.svg)"
       }
     },
   },

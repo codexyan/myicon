@@ -1,8 +1,8 @@
 <template>
     <div id="hero-banner">
         <div
-            class="relative isolate px-6 pt-14 lg:px-8 bg-[url('/src/assets/img/banner/hero-banner.jpg')] bg-cover bg-center bg-no-repeat">
-            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-72">
+            class="relative isolate px-6 pt-14 lg:px-8 bg-[url('/src/assets/img/banner/hero-banner-1.svg')] bg-cover bg-center bg-no-repeat">
+            <div class="mx-auto max-w-2xl py-20 sm:py-48 lg:py-72">
                 <div class="text-center">
                     <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                         Take Your Special Moment with Us
