@@ -6,7 +6,7 @@ const categories = ref({
     Documentation: [
         {
             id: 1,
-            thumbnail: "https://source.unsplash.com/random",
+            thumbnail: "https://source.unsplash.com/random/400x300?graduation",
             title: "Graduation Packages",
             service_one: "Unlimitied Photoshot",
             service_two: "Cinematic Videos",
@@ -16,7 +16,7 @@ const categories = ref({
         },
         {
             id: 2,
-            thumbnail: "/src/assets/img/solution/s-wedding.png",
+            thumbnail: "https://source.unsplash.com/random/400x300?wedding",
             title: "Wedding Packages",
             service_one: "Unlimitied Photoshot",
             service_two: "Cinematic Videos",
@@ -26,7 +26,7 @@ const categories = ref({
         },
         {
             id: 3,
-            thumbnail: "/src/assets/img/solution/s-enterprise.png",
+            thumbnail: "https://source.unsplash.com/random/400x300?travel",
             title: "Enterprise Packages",
             service_one: "Company Profiles",
             service_two: "Tour & Travel",
@@ -38,7 +38,7 @@ const categories = ref({
     SMM: [
         {
             id: 1,
-            thumbnail: "/src/assets/img/solution/coming-soon.png",
+            thumbnail: "https://source.unsplash.com/random/400x300?socialmedia",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -48,7 +48,7 @@ const categories = ref({
         },
         {
             id: 2,
-            thumbnail: "/src/assets/img/solution/coming-soon.png",
+            thumbnail: "https://source.unsplash.com/random/400x300?socialmedia",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -58,7 +58,7 @@ const categories = ref({
         },
         {
             id: 3,
-            thumbnail: "/src/assets/img/solution/coming-soon.png",
+            thumbnail: "https://source.unsplash.com/random/400x300?socialmedia",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -70,7 +70,7 @@ const categories = ref({
     Invitation: [
         {
             id: 1,
-            thumbnail: "/src/assets/img/solution/coming-soon.png",
+            thumbnail: "https://source.unsplash.com/random/400x300?invitation",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -81,7 +81,7 @@ const categories = ref({
         },
         {
             id: 2,
-            thumbnail: "/src/assets/img/solution/coming-soon.png",
+            thumbnail: "https://source.unsplash.com/random/400x300?invitation",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -92,7 +92,7 @@ const categories = ref({
         },
         {
             id:3,
-            thumbnail: "/src/assets/img/solution/coming-soon.png",
+            thumbnail: "https://source.unsplash.com/random/400x300?invitation",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
