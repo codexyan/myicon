@@ -3,6 +3,7 @@ import Hero from '../components/homepage/hero/Hero.vue';
 import Team from '../components/homepage/team/Team.vue';
 import Solution from '../components/homepage/solution/Solution.vue';
 import Portofolio from '../components/homepage/portofolio/Portofolio.vue';
+import Testimony from '../components/homepage/testimony/Testimony.vue';
 
 </script>
 
@@ -11,6 +12,7 @@ import Portofolio from '../components/homepage/portofolio/Portofolio.vue';
         <Hero />
         <Solution />
         <Portofolio />
+        <Testimony />
         <Team />
     </main>
 </template>
