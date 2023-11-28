@@ -6,7 +6,7 @@ const categories = ref({
     Documentation: [
         {
             id: 1,
-            thumbnail: "/src/assets/img/solution/s-graduation.png",
+            thumbnail: "https://source.unsplash.com/random",
             title: "Graduation Packages",
             service_one: "Unlimitied Photoshot",
             service_two: "Cinematic Videos",
