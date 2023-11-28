@@ -6,7 +6,7 @@ const categories = ref({
     Documentation: [
         {
             id: 1,
-            thumbnail: "/img/solution/s-graduation.png",
+            thumbnail: "/src/assets/img/solution/s-graduation.png",
             title: "Graduation Packages",
             service_one: "Unlimitied Photoshot",
             service_two: "Cinematic Videos",
@@ -16,7 +16,7 @@ const categories = ref({
         },
         {
             id: 2,
-            thumbnail: "/img/solution/s-wedding.png",
+            thumbnail: "/src/assets/img/solution/s-wedding.png",
             title: "Wedding Packages",
             service_one: "Unlimitied Photoshot",
             service_two: "Cinematic Videos",
@@ -26,7 +26,7 @@ const categories = ref({
         },
         {
             id: 3,
-            thumbnail: "/img/solution/s-enterprise.png",
+            thumbnail: "/src/assets/img/solution/s-enterprise.png",
             title: "Enterprise Packages",
             service_one: "Company Profiles",
             service_two: "Tour & Travel",
@@ -38,7 +38,7 @@ const categories = ref({
     SMM: [
         {
             id: 1,
-            thumbnail: "/img/solution/coming-soon.png",
+            thumbnail: "/src/assets/img/solution/coming-soon.png",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -48,7 +48,7 @@ const categories = ref({
         },
         {
             id: 2,
-            thumbnail: "/img/solution/coming-soon.png",
+            thumbnail: "/src/assets/img/solution/coming-soon.png",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -58,7 +58,7 @@ const categories = ref({
         },
         {
             id: 3,
-            thumbnail: "/img/solution/coming-soon.png",
+            thumbnail: "/src/assets/img/solution/coming-soon.png",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -70,7 +70,7 @@ const categories = ref({
     Invitation: [
         {
             id: 1,
-            thumbnail: "/img/solution/coming-soon.png",
+            thumbnail: "/src/assets/img/solution/coming-soon.png",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -81,7 +81,7 @@ const categories = ref({
         },
         {
             id: 2,
-            thumbnail: "/img/solution/coming-soon.png",
+            thumbnail: "/src/assets/img/solution/coming-soon.png",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -92,7 +92,7 @@ const categories = ref({
         },
         {
             id:3,
-            thumbnail: "/img/solution/coming-soon.png",
+            thumbnail: "/src/assets/img/solution/coming-soon.png",
             title: "Coming Soon",
             service_one: "Soon",
             service_two: "Soon",
@@ -107,7 +107,7 @@ const categories = ref({
 
 <template>
     <div id="solution" class="md:w-[72rem] mx-auto w-full my-24">
-        <div class="mx-auto max-w-2xl text-center">
+        <div class="max-w-2xl mx-auto text-center">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Our Solution
             </h2>
@@ -117,9 +117,9 @@ const categories = ref({
         </div>
 
         <!-- Tabs -->
-        <div class="w-full mx-auto max-w-5xl px-2 py-8 sm:px-0">
+        <div class="w-full max-w-5xl px-2 py-8 mx-auto sm:px-0">
             <TabGroup>
-                <TabList class="flex space-x-1 rounded-xl bg-amber-200/20 p-1 max-w-md mx-auto">
+                <TabList class="flex max-w-md p-1 mx-auto space-x-1 rounded-xl bg-amber-200/20">
                     <Tab v-for="category in Object.keys(categories)" as="template" :key="category" v-slot="{ selected }">
                         <button :class="[
                             'w-full rounded-lg py-2.5 text-sm font-medium leading-5',
@@ -133,22 +133,24 @@ const categories = ref({
                     </Tab>
                 </TabList>
 
-                <TabPanels class="mt-2 shadow-md rounded-md">
+                <TabPanels class="mt-2 rounded-md shadow-md">
                     <TabPanel v-for="(posts, idx) in Object.values(categories)" :key="idx" :class="[
                         'rounded-xl bg-white p-3',
                         'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
                     ]">
-                        <ul class="flex md:flex-row flex-col">
+                        <ul class="flex flex-col md:flex-row">
                             <li v-for="post in posts" :key="post.id"
-                                class="relative p-3 flex flex-col md:flex-nowrap gap-4">
+                                class="relative flex flex-col gap-4 p-3 md:flex-nowrap">
                                 <div class="thumb-solution md:basis-3/5">
                                     <a :href="'/post/' + post.id">
-                                        <img :src="`/src/assets${post.thumbnail}`" :alt="post.title" class="rounded-md" />
+                                        <!-- <img :src="`/src/assets${post.thumbnail}`" :alt="post.title" class="rounded-md"/> -->
+                                        <!-- <img :src="require(`@/assets${post.thumbnail}`)" :alt="post.title" class="rounded-md" /> -->
+                                        <img :src="post.thumbnail" :alt="post.title" class="rounded-md" />
                                     </a>
                                 </div>
 
                                 <ul
-                                    class="mt-1 flex flex-col gap-4 space-x-1 text-xs font-normal leading-4 text-gray-500 w-full md:basis-2/5">
+                                    class="flex flex-col w-full gap-4 mt-1 space-x-1 text-xs font-normal leading-4 text-gray-500 md:basis-2/5">
                                     <li class="text-base font-normal leading-5">
                                         {{ post.title }}
                                     </li>
@@ -161,7 +163,7 @@ const categories = ref({
                                                     d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                                                     clip-rule="evenodd" />
                                             </svg>
-                                            <p class="text-sm text-slate-600/60 font-light">
+                                            <p class="text-sm font-light text-slate-600/60">
                                                 {{ post.service_one }}
                                             </p>
                                         </li>
@@ -172,7 +174,7 @@ const categories = ref({
                                                     d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                                                     clip-rule="evenodd" />
                                             </svg>
-                                            <p class="text-sm text-slate-600/60 font-light">
+                                            <p class="text-sm font-light text-slate-600/60">
                                                 {{ post.service_two }}
                                             </p>
                                         </li>
@@ -183,7 +185,7 @@ const categories = ref({
                                                     d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                                                     clip-rule="evenodd" />
                                             </svg>
-                                            <p class="text-sm text-slate-600/60 font-light">
+                                            <p class="text-sm font-light text-slate-600/60">
                                                 {{ post.service_three }}
                                             </p>
                                         </li>
@@ -194,7 +196,7 @@ const categories = ref({
                                                     d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                                                     clip-rule="evenodd" />
                                             </svg>
-                                            <p class="text-sm text-slate-600/60 font-light">
+                                            <p class="text-sm font-light text-slate-600/60">
                                                 {{ post.service_fourth }}
                                             </p>
                                         </li>
@@ -205,7 +207,7 @@ const categories = ref({
                                                     d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
                                                     clip-rule="evenodd" />
                                             </svg>
-                                            <p class="text-sm text-slate-600/60 font-light">
+                                            <p class="text-sm font-light text-slate-600/60">
                                                 {{ post.service_five }}
                                             </p>
                                         </li>
