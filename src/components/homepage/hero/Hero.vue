@@ -13,7 +13,7 @@
                     </p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
                         <a href="#"
-                            class="text-white bg-gradient-to-r from-yellow-500 via-amber-500 to-amber-500 text-base py-3 px-8 rounded-sm font-medium">
+                            class="text-white bg-gradient-to-r from-yellow-500 via-amber-500 to-amber-500 text-base py-3 px-8 rounded-md font-medium">
                             Contact Now</a>
                     </div>
                 </div>

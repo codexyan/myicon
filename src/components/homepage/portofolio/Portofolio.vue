@@ -5,7 +5,7 @@ const portofolio = ref({
     Portofolios: [
         {
             id: 1,
-            thumbnail: "https://source.unsplash.com/random/400x300?wedding",
+            thumbnail: "https://source.unsplash.com/random/400x300?client",
             categories: "Documentation",
             title: "Vodjo Client Review"
         },
@@ -26,6 +26,30 @@ const portofolio = ref({
             thumbnail: "https://source.unsplash.com/random/400x300?happy",
             categories: "Documentation",
             title: "Short Movie"
+        },
+        {
+            id: 5,
+            thumbnail: "https://source.unsplash.com/random/400x300?trip",
+            categories: "Documentation",
+            title: "Traveling Documentation"
+        },
+        {
+            id: 6,
+            thumbnail: "https://source.unsplash.com/random/400x300?wedding",
+            categories: "Documentation",
+            title: "Wedding Photography"
+        },
+        {
+            id: 7,
+            thumbnail: "https://source.unsplash.com/random/400x300?design",
+            categories: "Documentation",
+            title: "Visual Design"
+        },
+        {
+            id: 8,
+            thumbnail: "https://source.unsplash.com/random/400x300?startup",
+            categories: "Documentation",
+            title: "Video Company Profile"
         },
     ]
 })
