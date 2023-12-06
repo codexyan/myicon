@@ -59,7 +59,7 @@ const review = ref({
                             </div>
                         </div>
                         <div class="item-message">
-                            <p class="text-base font-thin text-slate-600">
+                            <p class="text-sm font-light text-slate-600">
                                 {{ side.message }}
                             </p>
                         </div>
@@ -97,7 +97,7 @@ const review = ref({
                                 class="rounded-full" />
                             <div>
                                 <h1 class="text-base text-white">{{ main.name }}</h1>
-                                <p class="text-xs italic font-thin text-slate-100">
+                                <p class="italic font-thin text- text-slate-100">
                                     {{ main.role }}
                                 </p>
                             </div>
@@ -117,7 +117,7 @@ const review = ref({
                             </div>
                         </div>
                         <div class="item-message">
-                            <p class="text-base font-thin text-slate-600">
+                            <p class="text-sm font-light text-slate-600">
                                 {{ side.message }}
                             </p>
                         </div>
