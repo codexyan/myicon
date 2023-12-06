@@ -14,7 +14,7 @@ import { RouterLink } from "vue-router";
                         <RouterLink to="/">
                             <img src="@/assets/img/logo/logo-gold.png" alt="logo" class="h-8 drop-shadow-lg" />
                         </RouterLink>
-                        <p class="mt-4 text-sm font-normal leading-5 text-left text-slate-400">iCon merupakan Digital
+                        <p class="mt-4 text-sm font-normal leading-6 text-left text-slate-400">iCon merupakan Digital
                             Creative House Production di Yogyakarta yang bertujuan membantu bisnis dalam melakukan Digital
                             Marketing dengan berbagai layanan terbaik.</p>
                     </div>
