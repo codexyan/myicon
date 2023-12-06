@@ -88,7 +88,7 @@ const review = ref({
                             </div>
                         </div>
                         <div class="item-message">
-                            <p class="text-base font-thin text-white">
+                            <p class="text-sm font-light text-white">
                                 {{ main.message }}
                             </p>
                         </div>
