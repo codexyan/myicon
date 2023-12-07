@@ -27,13 +27,11 @@ import { RouterLink } from "vue-router";
             </p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15807.041414598978!2d110.36561707839421!3d-7.920082144492036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a54f8c850f557%3A0x17724c4166ed7232!2sImogiri%2C%20Paduresan%2C%20Imogiri%2C%20Bantul%20Regency%2C%20Special%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1701916889161!5m2!1sen!2sid"
-              width="400"
-              height="300"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="mt-5"
+              class="w-full mt-5 h-3/6"
             ></iframe>
           </div>
 
