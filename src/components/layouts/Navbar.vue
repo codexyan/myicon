@@ -69,7 +69,7 @@ window.onscroll = function () {
                 <!-- Button -->
                 <div class="hidden sm:block md:order-2">
                     <RouterLink to="/"
-                        class="px-8 py-3 text-base font-medium text-white rounded-lg bg-gradient-to-r from-yellow-500 via-amber-500 to-amber-500">
+                        class="px-8 py-3 text-base font-medium text-white rounded-md bg-gradient-to-r from-yellow-500 via-amber-500 to-amber-500">
                         Hubungi Kami
                     </RouterLink>
                 </div>

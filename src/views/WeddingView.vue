@@ -8,9 +8,6 @@ import Testimony from '../components/homepage/testimony/Testimony.vue';
 
 <template>
     <main class="bg-amber-100/10">
-        <Hero />
-        <Solution />
-        <Portofolio />
-        <Testimony />
+        <h1>Ini adalah halaman wedding</h1>
     </main>
 </template>

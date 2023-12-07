@@ -1,7 +1,7 @@
 <template>
     <div id="hero-banner">
-        <section class="bg-white dark:bg-gray-300 bg-[url('/src/assets/img/banner/hero-banner-1.svg')] bg-cover bg-center bg-no-repeat h-[600px]">
-            <div class="grid items-center h-full max-w-screen-lg mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <section class="bg-white dark:bg-gray-300 bg-[url('/src/assets/img/banner/hero-banner-1.svg')] bg-cover bg-center bg-no-repeat h-[500px] md:h-[600px]">
+            <div class="grid items-center h-full max-w-screen-lg px-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div class="mr-auto place-self-center lg:col-span-7">
                     <h1
                         class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl xl:text-6xl">
