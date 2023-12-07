@@ -22,42 +22,42 @@ window.onscroll = function () {
 </script>
 
 <template>
-    <nav id="header" class="py-5 right-0 left-0 bg-transparent">
+    <nav id="header" class="left-0 right-0 py-5 bg-transparent">
         <div class="container md:w-[72rem] mx-auto w-full">
-            <div class="wrap px-3 flex flex-row flex-wrap items-center justify-between">
+            <div class="flex flex-row flex-wrap items-center justify-between px-3 wrap">
                 <!-- Logo -->
                 <RouterLink to="/">
                     <img src="@/assets/img/logo/logo-gold.png" alt="logo" class="h-11 drop-shadow-lg" />
                 </RouterLink>
 
                 <!-- Navigation Link -->
-                <div :class="{ 'block':mobileMenuOpen, 'hidden': !mobileMenuOpen }" class="items-center justify-between sm:hidden w-full md:flex md:w-auto order-4 md:order-1" id="mobile-menu-2">
+                <div :class="{ 'block':mobileMenuOpen, 'hidden': !mobileMenuOpen }" class="items-center justify-between order-4 w-full sm:hidden md:flex md:w-auto md:order-1" id="mobile-menu-2">
                     <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-regular">
                         <li>
                             <RouterLink to="/"
-                                class="block py-2 pl-3 pr-4 text-gray-600 font-light border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0"
+                                class="block py-2 pl-3 pr-4 font-light text-gray-600 border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0"
                                 aria-current="page">Home</RouterLink>
                         </li>
                         <li>
                             <RouterLink to="/"
-                                class="block py-2 pl-3 pr-4 text-gray-600 font-light border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
+                                class="block py-2 pl-3 pr-4 font-light text-gray-600 border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
                                 Layanan</RouterLink>
                         </li>
                         <li>
                             <RouterLink to="/"
-                                class="block py-2 pl-3 pr-4 text-gray-600 font-light border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
+                                class="block py-2 pl-3 pr-4 font-light text-gray-600 border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
                                 Portfolio</RouterLink>
                         </li>
                         <li>
                             <RouterLink to="/"
-                                class="block py-2 pl-3 pr-4 text-gray-600 font-light border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
+                                class="block py-2 pl-3 pr-4 font-light text-gray-600 border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
                                 Tentang Kami</RouterLink>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Toggle -->
-                <button @click="toggleMobileMenu" class="sm:hidden order-3 border-2 border-slate-500/40 py-1 px-1 rounded-md shadow-lg">
+                <button @click="toggleMobileMenu" class="order-3 px-1 py-1 border-2 rounded-md shadow-lg sm:hidden border-slate-500/40">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                         class="w-6 h-6 text-gray-600 cursor-pointer">
                         <path fill-rule="evenodd"
@@ -69,8 +69,8 @@ window.onscroll = function () {
                 <!-- Button -->
                 <div class="hidden sm:block md:order-2">
                     <RouterLink to="/"
-                        class="text-white bg-gradient-to-r from-yellow-500 via-amber-500 to-amber-500 text-base py-3 px-8 rounded-sm font-medium">
-                        Consultation
+                        class="px-8 py-3 text-base font-medium text-white rounded-lg bg-gradient-to-r from-yellow-500 via-amber-500 to-amber-500">
+                        Hubungi Kami
                     </RouterLink>
                 </div>
             </div>
