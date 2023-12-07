@@ -6,14 +6,14 @@ const portofolio = ref({
         {
             id: 1,
             thumbnail: "https://source.unsplash.com/random/400x300?client",
-            categories: "Documentation",
-            title: "Vodjo Client Review"
+            categories: "Creative Production",
+            title: "Wedding Iqbal & Eki"
         },
         {
             id: 2,
             thumbnail: "https://source.unsplash.com/random/400x300?film",
-            categories: "Documentation",
-            title: "Short Movie"
+            categories: "Creative Production",
+            title: "Wedding Ikhwan & Akhwat"
         },
         {
             id: 3,
@@ -64,7 +64,7 @@ const portofolio = ref({
                 <div class="max-w-full text-center">
                     <h2 class="text-3xl font-bold tracking-tighter text-gray-900 sm:text-3xl">Portofolio</h2>
                     <p class="mt-1 text-base font-light leading-8 text-gray-600">Beberapa contoh hasil pekerjaan yang telah
-                        kami lakukan sebelumnya.</p>
+                        kami kerjakan.</p>
                 </div>
 
                 <!-- Card Section -->
@@ -75,9 +75,9 @@ const portofolio = ref({
                                 class="rounded-md shadow-lg image-container outline outline-white outline-offset-0 outline-6">
                                 <img :src="post.thumbnail" alt="container-card">
                             </div>
-                            <div class="flex flex-col">
-                                <h3 class="text-sm font-light text-slate-700">{{ post.categories }}</h3>
-                                <h1 class="text-base">{{ post.title }}</h1>
+                            <div class="flex flex-col gap-1 mt-2">
+                                <h3 class="px-5 py-1 text-xs font-light rounded-full text-slate-200 bg-gradient-to-r from-amber-800 to-amber-200 w-fit">{{ post.categories }}</h3>
+                                <h1 class="text-base text-slate-800">{{ post.title }}</h1>
                             </div>
                         </div>
                     </div>
