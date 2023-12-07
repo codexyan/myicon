@@ -106,7 +106,7 @@ const categories = ref({
               <li v-for="post in posts" :key="post.id" class="relative h-80">
                 <!-- Card -->
                 <div :style="{ backgroundImage: `url(${post.thumbnail})` }" :alt="post.title"
-                  class="w-full h-full mb-5 duration-300 ease-in-out delay-100 bg-center bg-cover rounded-md hover:shadow-lg hover:scale-105 trasition">
+                  class="w-full h-full mb-5 duration-300 ease-in-out delay-100 bg-center bg-cover rounded-md hover:shadow-lg md:hover:scale-105 trasition">
                   <ul
                     class="absolute inset-x-0 bottom-0 flex flex-col gap-2 px-3 pb-5 text-xs font-normal leading-4 rounded-md bg-gradient-to-t from-slate-900 text-slate-200">
                     <li class="flex flex-col">
