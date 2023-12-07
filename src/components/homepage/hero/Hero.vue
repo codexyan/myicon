@@ -5,7 +5,7 @@
                 <div class="mr-auto place-self-center lg:col-span-7">
                     <h1
                         class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl xl:text-6xl">
-                        Creative Production & Digital Solution
+                        Creative House & Digital Solution
                     </h1>
                     <p class="max-w-2xl mb-6 font-light text-slate-200 lg:mb-8 md:text-lg lg:text-xl ">
                         iCon merupakan Digital Creative House Production di Yogyakarta yang
