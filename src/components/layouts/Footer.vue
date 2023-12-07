@@ -5,7 +5,7 @@ import { RouterLink } from "vue-router";
 <template>
   <footer>
     <div
-      class="container md:w-[72rem] mx-auto w-full flex flex-col text-center justify-center gap-4 py-6"
+      class="container md:w-[72rem] mx-auto w-full flex flex-col text-center justify-center gap-4 py-6 "
     >
       <div class="container">
         <div class="flex flex-col gap-8 mx-3 md:flex-row md:m-0">
@@ -260,7 +260,7 @@ import { RouterLink } from "vue-router";
       </div>
 
       <p
-        class="pt-5 mt-5 text-xs text-gray-500 border-t-2 sm:text-sm font-extralight border-slate-300"
+        class="pt-5 mt-5 text-xs text-gray-500 border-t-2 sm:text-sm font-extralight border-slate-200"
       >
         © 2023 ian Creative Production Corp. All rights reserved.
       </p>
