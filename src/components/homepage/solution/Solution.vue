@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from "@headlessui/vue";
+import { RouterLink } from "vue-router";
 
 const categories = ref({
   "Creative Production": [
@@ -143,9 +144,12 @@ const categories = ref({
                       </ul>
                     </li>
                     <li class="mt-4">
-                      <a :href="post.url"
+                      <RouterLink to="/wedding"
                         class="px-5 py-2 text-sm font-normal transition duration-200 ease-in-out delay-75 border rounded-sm hover:scale-110 hover:translate-y-1 text-amber-300 border-amber-300 hover:border-none hover:bg-slate-50 hover:text-amber-600">Lihat
-                        Layanan</a>
+                        Layanan</RouterLink>
+                      <!-- <a :href="post.url"
+                        class="px-5 py-2 text-sm font-normal transition duration-200 ease-in-out delay-75 border rounded-sm hover:scale-110 hover:translate-y-1 text-amber-300 border-amber-300 hover:border-none hover:bg-slate-50 hover:text-amber-600">Lihat
+                        Layanan</a> -->
                     </li>
                   </ul>
                 </div>
