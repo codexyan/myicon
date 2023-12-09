@@ -1,4 +1,5 @@
 import './main.css'
+import AOS from "aos"
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -10,5 +11,6 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
+AOS.init()
 
 app.mount('#app')

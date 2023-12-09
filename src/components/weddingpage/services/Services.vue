@@ -30,7 +30,7 @@ const cardServices = ref({
 </script>
 
 <template>
-    <div>
+    <div class="sm:my-0 my-12">
         <div class="title text-center mb-8">
             <p class="text-amber-500 font-spectral text-lg italic">What We do</p>
             <h1 class="text-2xl font-bold text-slate-700 font-open">

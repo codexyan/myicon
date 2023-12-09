@@ -1,8 +1,10 @@
 <script setup>
 import Hero from '@/components/weddingpage/hero/Hero.vue';
-import Breadcumb from '../components/weddingpage/breadcumb/Breadcumb.vue';
-import Services from '../components/weddingpage/services/Services.vue';
-import Gallery from '../components/weddingpage/gallery/Gallery.vue';
+import Breadcumb from '@/components/weddingpage/breadcumb/Breadcumb.vue';
+import Services from '@/components/weddingpage/services/Services.vue';
+import Gallery from '@/components/weddingpage/gallery/Gallery.vue';
+import Featured from '@/components/weddingpage/featured/Featured.vue';
+import Faq from '../components/weddingpage/faq/Faq.vue';
 </script>
 
 <template>
@@ -11,5 +13,7 @@ import Gallery from '../components/weddingpage/gallery/Gallery.vue';
         <Hero />
         <Services />
         <Gallery />
+        <Featured />
+        <Faq />
     </main>
 </template>

@@ -119,7 +119,7 @@ const categories = ref({
             <ul class="grid gap-5 mt-5 md:grid-cols-3">
               <li v-for="post in posts" :key="post.id" class="relative h-96">
                 <!-- Card -->
-                <div :style="{ backgroundImage: `url(${post.thumbnail})` }" :alt="post.title"
+                <div :style="{ backgroundImage: `url(${post.thumbnail})` }" :alt="post.title" data-aos="fade-in"
                   class="w-full h-full mb-5 duration-300 ease-in-out delay-100 bg-center bg-cover rounded-md hover:shadow-lg md:hover:scale-105 trasition">
                   <ul
                     class="absolute inset-x-0 bottom-0 flex flex-col justify-end h-full gap-2 px-5 text-xs font-normal leading-4 rounded-md pb-7 bg-gradient-to-t from-slate-900 text-slate-200">
@@ -147,9 +147,6 @@ const categories = ref({
                       <RouterLink to="/wedding"
                         class="px-5 py-2 text-sm font-normal transition duration-200 ease-in-out delay-75 border rounded-sm hover:scale-110 hover:translate-y-1 text-amber-300 border-amber-300 hover:border-none hover:bg-slate-50 hover:text-amber-600">Lihat
                         Layanan</RouterLink>
-                      <!-- <a :href="post.url"
-                        class="px-5 py-2 text-sm font-normal transition duration-200 ease-in-out delay-75 border rounded-sm hover:scale-110 hover:translate-y-1 text-amber-300 border-amber-300 hover:border-none hover:bg-slate-50 hover:text-amber-600">Lihat
-                        Layanan</a> -->
                     </li>
                   </ul>
                 </div>

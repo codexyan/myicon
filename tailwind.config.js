@@ -1,24 +1,29 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./node_modules/flowbite/**/*.js",
+  ],
   theme: {
     extend: {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
         open: ["Open Sans", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
-        spectral: ["Spectral", "serif"]
+        spectral: ["Spectral", "serif"],
       },
       width: {
-        "1140": "72rem",
+        1140: "72rem",
       },
       backgroundImage: {
-        "hero-banner": "url('/src/assets/img/banner/hero-banner-1.svg)"
-      }
+        "hero-banner": "url('/src/assets/img/banner/hero-banner-1.svg)",
+      },
     },
   },
   plugins: [
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
+    require("flowbite/plugin"),
   ],
 };

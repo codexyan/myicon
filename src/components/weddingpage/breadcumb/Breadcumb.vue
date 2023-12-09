@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Breadcrumb -->
-        <nav class="flex px-5 py-3 md:mx-auto mt-4 rounded-lg shadow-sm md:bg-gray-50 text-slate-700 max-w-fit"
+        <nav class="flex mx-auto px-5 py-3 md:mx-auto mt-4 rounded-lg shadow-sm md:bg-gray-50 text-slate-700 max-w-fit"
             aria-label="Breadcrumb">
             <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
                 <li class="inline-flex items-center">
