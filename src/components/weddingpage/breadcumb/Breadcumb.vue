@@ -1,12 +1,12 @@
 <template>
     <div>
         <!-- Breadcrumb -->
-        <nav class="flex justify-center px-5 py-3 mx-auto mt-4 mb-8 rounded-lg shadow-sm bg-gray-50 text-slate-700 max-w-fit"
+        <nav class="flex px-5 py-3 md:mx-auto mt-4 rounded-lg shadow-sm md:bg-gray-50 text-slate-700 max-w-fit"
             aria-label="Breadcrumb">
             <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
                 <li class="inline-flex items-center">
                     <a href="#"
-                        class="inline-flex items-center text-sm font-medium text-gray-400 hover:text-amber-600">
+                        class="inline-flex items-center text-xs md:text-sm font-medium text-gray-400 hover:text-amber-600">
                         <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor" viewBox="0 0 20 20">
                             <path
@@ -23,7 +23,7 @@
                                 d="m1 9 4-4-4-4" />
                         </svg>
                         <a href="#"
-                            class="text-sm font-medium text-gray-700 ms-1 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Layanan</a>
+                            class="text-xs md:text-sm font-medium text-gray-400 ms-1 hover:text-amber-600 md:ms-2 ">Layanan</a>
                     </div>
                 </li>
                 <li aria-current="page">
@@ -33,7 +33,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="m1 9 4-4-4-4" />
                         </svg>
-                        <span class="text-sm font-medium text-gray-500 ms-1 md:ms-2 dark:text-gray-400">Wedding</span>
+                        <span class="text-xs md:text-sm font-medium text-gray-400 ms-1 md:ms-2 hover:text-amber-600 cursor-pointer">Wedding</span>
                     </div>
                 </li>
             </ol>

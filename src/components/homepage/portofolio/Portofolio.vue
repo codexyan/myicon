@@ -76,7 +76,9 @@ const portofolio = ref({
                                 <img :src="post.thumbnail" alt="container-card">
                             </div>
                             <div class="flex flex-col gap-1 mt-2">
-                                <h3 class="px-5 py-1 text-xs font-light rounded-full text-slate-200 bg-gradient-to-r from-amber-800 to-amber-200 w-fit">{{ post.categories }}</h3>
+                                <h3
+                                    class="px-5 py-1 text-xs font-medium rounded-full text-slate-500 bg-gradient-to-r from-slate-200 to-slate-50 shadow-sm w-fit">
+                                    {{ post.categories }}</h3>
                                 <h1 class="text-base text-slate-800">{{ post.title }}</h1>
                             </div>
                         </div>
