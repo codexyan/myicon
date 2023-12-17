@@ -3,8 +3,8 @@ import Hero from '@/components/weddingpage/hero/Hero.vue';
 import Breadcumb from '@/components/weddingpage/breadcumb/Breadcumb.vue';
 import Services from '@/components/weddingpage/menu/Services.vue';
 import Gallery from '@/components/weddingpage/gallery/Gallery.vue';
-import Footer from '@/components/layouts/footer.vue';
 import Faq from '@/components/weddingpage/askquestion/Faq.vue';
+// import Footer from '@/components/layouts/Footer.vue';
 </script>
 
 <template>
@@ -14,6 +14,6 @@ import Faq from '@/components/weddingpage/askquestion/Faq.vue';
         <Services />
         <Gallery />
         <Faq />
-        <Footer />
+        <!-- <Footer /> -->
     </main>
 </template>
