@@ -1,8 +1,8 @@
 <template>
     <div class="w-full bg-slate-100/50 md:py-12 py-5 bg-[url('/src/assets/img/banner/bg-white.png')] bg-cover bg-center bg-no-repeat">
-        <div id="head-breadcumb" class="container flex flex-col gap-3 mx-auto text-center md:w-[72rem] w-full">
+        <div id="head-breadcumb" class="container flex flex-col gap-3 mx-auto text-center md:w-[72rem] w-full px-5">
             <h1 class="md:text-4xl text-xl font-bold text-slate-700">Jasa Dokumentasi Pernikahan</h1>
-            <p class="text-sm">Berbagai layanan branding produk hingga corporate branding mulai yang lengkap.</p>
+            <p class="text-sm text-slate-500">Berbagai layanan dokumentasi jasa pernikahan professional.</p>
         </div>
 
         <!-- Breadcrumb -->

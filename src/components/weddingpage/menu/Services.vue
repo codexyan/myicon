@@ -32,7 +32,7 @@ const cardServices = ref({
 <template>
     <div class="md:mt-20">
         <div class="title text-center mb-8">
-            <p class="text-amber-500 font-spectral text-lg italic">What We do</p>
+            <p class="text-amber-500 font-spectral text-lg italic">#What We do</p>
             <h1 class="md:text-2xl text-xl font-bold text-slate-700 font-open">
                 Pilih Layanan Dokumentasi
             </h1>
@@ -138,8 +138,8 @@ const cardServices = ref({
             </div>
         </div>
         <div id="cta-ask"
-            class="border w-max mx-auto flex flex-row gap-3 items-center py-3 px-5 rounded-full text-center mt-12">
-            <p class="text-slate-600">Punya kebutuhan lain ?</p>
-        <p class="text-amber-600 font-semibold">Konsultasikan !</p>
+            class="border w-max mx-auto flex flex-row gap-3 items-center py-3 px-5 rounded-full text-center mt-6 mb-12">
+            <p class="text-slate-600 md:text-base text-xs">Punya kebutuhan lain ?</p>
+        <p class="text-amber-600 font-semibold md:text-base text-xs">Konsultasikan !</p>
     </div>
 </div></template>
