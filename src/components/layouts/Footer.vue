@@ -138,8 +138,8 @@ import { RouterLink } from "vue-router";
         </div>
       </div>
 
-      <p class="pt-5 mt-5 text-xs text-gray-500 border-t-2 sm:text-sm font-extralight border-slate-200">
-        Build 2023 ian Creative Production Corp All rights reserved.
+      <p class="pt-5 mt-5 text-xs text-gray-500 border-t-2 sm:text-sm font-extralight border-slate-100">
+        Develop by iCoup © All rights reserved.
       </p>
 
     </div>

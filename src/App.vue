@@ -2,17 +2,19 @@
 import { RouterView } from 'vue-router'
 
 import Navbar from './components/layouts/Navbar.vue';
-import Footer from './components/layouts/Footer.vue';
+// import Footer from './components/layouts/Footer.vue';
 </script>
 
 <template>
   <header>
-    <nav>
+    <nav class="relative">
       <Navbar />
     </nav>
   </header>
-  <RouterView />
-  <Footer />
+  <main>
+    <RouterView />
+  </main>
+  <!-- <Footer /> -->
 </template>
 
 <style scoped></style>

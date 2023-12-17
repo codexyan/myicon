@@ -35,22 +35,22 @@ window.onscroll = function () {
                     <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-regular">
                         <li>
                             <RouterLink to="/"
-                                class="block py-2 pl-3 pr-4 font-light text-gray-600 border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0"
+                                class="block py-2 pl-3 pr-4 font-medium text-gray-300 border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0"
                                 aria-current="page">Home</RouterLink>
                         </li>
                         <li>
                             <RouterLink to="/"
-                                class="block py-2 pl-3 pr-4 font-light text-gray-600 border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
+                                class="block py-2 pl-3 pr-4 font-medium text-gray-300 border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
                                 Layanan</RouterLink>
                         </li>
                         <li>
                             <RouterLink to="/"
-                                class="block py-2 pl-3 pr-4 font-light text-gray-600 border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
+                                class="block py-2 pl-3 pr-4 font-medium text-gray-300 border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
                                 Portfolio</RouterLink>
                         </li>
                         <li>
                             <RouterLink to="/"
-                                class="block py-2 pl-3 pr-4 font-light text-gray-600 border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
+                                class="block py-2 pl-3 pr-4 font-medium text-gray-300 border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0">
                                 Tentang Kami</RouterLink>
                         </li>
                     </ul>
@@ -86,5 +86,6 @@ window.onscroll = function () {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.05);
+    color: black !important;
 }
 </style>

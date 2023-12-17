@@ -61,9 +61,7 @@ const portofolio = ref({
       <div class="mx-auto">
         <!-- Title Section -->
         <div class="max-w-full text-center">
-          <h2
-            class="text-3xl font-bold tracking-tighter text-gray-900 sm:text-3xl"
-          >
+          <h2 class="text-3xl font-bold tracking-tighter text-gray-900 sm:text-3xl">
             Portofolio
           </h2>
           <p class="mt-1 text-base font-light leading-8 text-gray-600">
@@ -72,29 +70,16 @@ const portofolio = ref({
         </div>
 
         <!-- Card Section -->
-        <div
-          id="card-list"
-          class="grid gap-6 px-4 mt-8 sm:grid-cols-2 md:grid-cols-4"
-        >
-          <div
-            v-for="post in portofolio.Portofolios"
-            :key="post.id"
-            id="card-item"
-            class="container-card"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="800"
-          >
+        <div id="card-list" class="grid gap-6 px-4 mt-8 sm:grid-cols-2 md:grid-cols-4">
+          <div v-for="post in portofolio.Portofolios" :key="post.id" id="card-item" class="container-card"
+            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800">
             <div class="flex flex-col gap-2">
-              <div
-                class="rounded-md shadow-lg image-container outline outline-white outline-offset-0 outline-6"
-              >
+              <div class="rounded-md shadow-lg image-container outline outline-white outline-offset-0 outline-6">
                 <img :src="post.thumbnail" alt="container-card" />
               </div>
               <div class="flex flex-col gap-1 mt-2">
                 <h3
-                  class="px-5 py-1 text-xs font-medium rounded-full text-slate-500 bg-gradient-to-r from-slate-200 to-slate-50 shadow-sm w-fit"
-                >
+                  class="px-5 py-1 text-xs font-medium rounded-full text-slate-500 bg-gradient-to-r from-slate-200 to-slate-50 shadow-sm w-fit">
                   {{ post.categories }}
                 </h3>
                 <h1 class="text-base text-slate-800">{{ post.title }}</h1>
@@ -105,9 +90,7 @@ const portofolio = ref({
 
         <!-- CTA -->
         <div id="cta-more" class="max-w-full text-center mt-9">
-          <a href="/" class="text-base font-normal text-amber-600"
-            >Lihat Semuanya</a
-          >
+          <a href="/" class="text-base font-normal text-amber-600">Lihat Semuanya</a>
         </div>
       </div>
     </div>

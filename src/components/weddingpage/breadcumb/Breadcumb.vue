@@ -1,7 +1,12 @@
 <template>
-    <div>
+    <div class="w-full bg-slate-100/50 md:py-12 py-5 bg-[url('/src/assets/img/banner/bg-white.png')] bg-cover bg-center bg-no-repeat">
+        <div id="head-breadcumb" class="container flex flex-col gap-3 mx-auto text-center md:w-[72rem] w-full">
+            <h1 class="md:text-4xl text-xl font-bold text-slate-700">Jasa Dokumentasi Pernikahan</h1>
+            <p class="text-sm">Berbagai layanan branding produk hingga corporate branding mulai yang lengkap.</p>
+        </div>
+
         <!-- Breadcrumb -->
-        <nav class="flex mx-auto px-5 py-3 md:mx-auto mt-4 rounded-lg shadow-sm md:bg-gray-50 text-slate-700 max-w-fit"
+        <nav class="flex mx-auto px-5 py-3 md:mx-auto mt-4 rounded-lg text-slate-700 max-w-fit"
             aria-label="Breadcrumb">
             <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
                 <li class="inline-flex items-center">

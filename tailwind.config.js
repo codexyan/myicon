@@ -18,12 +18,12 @@ module.exports = {
       },
       backgroundImage: {
         "hero-banner": "url('/src/assets/img/banner/hero-banner-1.svg)",
+        "wedding-banner": "url('/src/assets/img/banner/bg-white.png)",
       },
     },
   },
   plugins: [
     require("@tailwindcss/forms"),
-    require("@tailwindcss/aspect-ratio"),
-    require("flowbite/plugin"),
+    require("@tailwindcss/aspect-ratio")
   ],
 };

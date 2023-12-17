@@ -1,23 +1,31 @@
 <script>
-import { RouterLink } from 'vue-router';    
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
     <div id="hero-banner">
-        <section class="bg-white sm:h-[400px]">
-            <div class="grid items-center h-full max-w-screen-lg gap-8 mx-auto lg:gap-12 md:py-16 md:grid-cols-12">
-                <div class="rounded-sm lg:mt-0 lg:col-span-5">
-                    <img src="../../../assets/img/banner/banner.png" alt="mockup" />
-                </div>
-                <div class="h-full mr-auto place-self-center lg:col-span-7">
-                    <p class="text-amber-600 font-spectral italic text-normal">Deliver Your Timeless Moments</p>
-                    <h1
-                        class="max-w-2xl mb-4 text-xl font-bold leading-none tracking-tight text-slate-700 md:text-3xl">
-                        Jasa Dokumentasi Pernikahan
-                    </h1>
-                    <p class="max-w-2xl mb-6 text-sm font-light leading-6 text-slate-500 lg:mb-8 md:text-base">
-                        Layanan Dokuemntasi Pernikahan mulai dari Photoshoot, Cinmatic Videos dan juga menyediakan kebutuhan seperti bucket, hantaran, MUA dll. Didukungan peralatan, model, dan tim yang profesional.
+        <section class="bg-white sm:h-[400px] my-9">
+            <div class="grid items-center h-full gap-12 mx-auto md:gap-20 md:py-16 md:grid-cols-12">
+                <div class="h-full mr-auto place-self-center md:col-span-6">
+                    <p class="text-amber-600 font-spectral italic text-normal">
+                        # Deliver Your Timeless Moments
                     </p>
+                    <h1 class="max-w-2xl mb-4 text-xl font-bold leading-none tracking-tight text-slate-700 md:text-3xl">
+                        Abadikan Moment Spesialmu
+                    </h1>
+                    <div class="max-w-2xl mb-3 text-sm leading-relaxed md:leading-7 font-normal text-slate-500 lg:mb-8 md:text-base flex flex-col gap-3">
+                        <p id="text">
+                            Layanan Dokumentasi Pernikahan mulai dari Photoshoot, Cinematic
+                            Videos dan juga menyediakan kebutuhan seperti bucket, hantaran, MUA
+                            dll. Didukungan peralatan, model, dan tim yang profesional.
+                        </p>
+                        <p id="text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, consectetur.
+                        </p>
+                        <p id="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus cupiditate, dicta soluta accusantium quidem.
+                        </p>
+                    </div>
                     <RouterLink to="/"
                         class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center transition duration-200 ease-in-out delay-100 border rounded-md text-amber-600 hover:bg-amber-800 focus:ring-4 focus:ring-primary-300 border-amber-600 hover:text-white">
                         Pesan Jadwal
@@ -28,6 +36,9 @@ import { RouterLink } from 'vue-router';
                                 clip-rule="evenodd"></path>
                         </svg>
                     </RouterLink>
+                </div>
+                <div class="rounded-sm md:mt-0 md:col-span-6 w-full">
+                    <img src="../../../assets/img/banner/banner.png" alt="mockup" />
                 </div>
             </div>
         </section>
