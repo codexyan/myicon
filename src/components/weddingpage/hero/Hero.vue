@@ -33,7 +33,7 @@ import { RouterLink } from "vue-router";
                             </p>
                         </div>
                         <RouterLink to="/"
-                            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center transition duration-200 ease-in-out delay-100 border rounded-md text-amber-600 hover:bg-amber-800 focus:ring-4 focus:ring-primary-300 border-amber-600 hover:text-white">
+                            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center transition duration-200 ease-in-out delay-100 border rounded-md text-amber-600 hover:bg-amber-800 focus:ring-4 focus:ring-primary-300 border-amber-600 hover:text-white md:w-1/3">
                             Pesan Jadwal
                             <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">

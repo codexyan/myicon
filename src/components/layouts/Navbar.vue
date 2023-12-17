@@ -1,24 +1,28 @@
 <script setup>
-import { ref } from "vue"
+import { ref } from "vue";
 import { RouterLink } from "vue-router";
-
-// navbar toogle
-const mobileMenuOpen = ref(false)
-const toggleMobileMenu = () => {
-    mobileMenuOpen.value = !mobileMenuOpen.value
-}
 
 // navbar blur scrolling
 window.onscroll = function () {
-    const header = document.querySelector("#header")
-    const fixedNav = header.offsetTop
+    const header = document.querySelector("#header");
+    const fixedNav = header.offsetTop;
 
     if (window.pageYOffset > fixedNav) {
-        header.classList.add('navbar-fixed')
+        header.classList.add("navbar-fixed");
     } else {
-        header.classList.remove('navbar-fixed')
+        header.classList.remove("navbar-fixed");
     }
-}
+};
+
+// navbar toogle
+const mobileMenuOpen = ref(false);
+const toggleMobileMenu = () => {
+    if (mobileMenuOpen.value = !mobileMenuOpen.value) {
+        header.classList.add("navbar-fixed");
+    } else {
+        header.classList.remove("navbar-fixed");
+    }
+};
 </script>
 
 <template>
@@ -27,16 +31,21 @@ window.onscroll = function () {
             <div class="flex flex-row flex-wrap items-center justify-between px-3 wrap">
                 <!-- Logo -->
                 <RouterLink to="/">
-                    <img src="@/assets/img/logo/logo-gold.png" alt="logo" class="h-11 drop-shadow-lg" />
+                    <img src="@/assets/img/logo/logo-gold.png" alt="logo" class="h-8 md:h-11 drop-shadow-lg" />
                 </RouterLink>
 
                 <!-- Navigation Link -->
-                <div :class="{ 'block':mobileMenuOpen, 'hidden': !mobileMenuOpen }" class="items-center justify-between order-4 w-full sm:hidden md:flex md:w-auto md:order-1" id="mobile-menu-2">
+                <div :class="{ block: mobileMenuOpen, hidden: !mobileMenuOpen }"
+                    class="items-center justify-between order-4 w-full sm:hidden md:flex md:w-auto md:order-1"
+                    id="mobile-menu-2">
                     <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-regular">
                         <li>
                             <RouterLink to="/"
-                                class="block py-2 pl-3 pr-4 font-medium text-gray-300 border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0"
-                                aria-current="page">Home</RouterLink>
+                                class="block py-2 pl-3 pr-4 font-medium border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0"
+                                :class="{
+                                    'text-amber-500': $route.path === '/',
+                                    'text-gray-300': $route.path !== '/',
+                                }" aria-current="page">Home</RouterLink>
                         </li>
                         <li>
                             <RouterLink to="/"
@@ -57,7 +66,8 @@ window.onscroll = function () {
                 </div>
 
                 <!-- Toggle -->
-                <button @click="toggleMobileMenu" class="order-3 px-1 py-1 border-2 rounded-md shadow-lg sm:hidden border-slate-500/40">
+                <button @click="toggleMobileMenu"
+                    class="order-3 px-1 py-1 border-2 rounded-md shadow-lg sm:hidden border-slate-500/40">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                         class="w-6 h-6 text-gray-600 cursor-pointer">
                         <path fill-rule="evenodd"
@@ -82,10 +92,9 @@ window.onscroll = function () {
 .navbar-fixed {
     position: fixed;
     z-index: 9999;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.05);
-    color: black !important;
 }
 </style>

@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <section id="gallery" class="md:my-16">
+    <section id="gallery" class="md:my-10">
         <div class="title text-center mb-8">
             <p class="text-amber-500 font-spectral text-lg italic">#Fotografer Pernikahan Profesional</p>
             <h1 class="text-2xl font-bold text-slate-700 font-open">Portofolio Kami</h1>
