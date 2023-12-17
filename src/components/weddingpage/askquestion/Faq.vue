@@ -55,9 +55,9 @@ const toggleAccordion = (index) => {
         </div>
 
         <div v-for="(item, index) in accordionItems" :key="index" class="accordion-item mb-3 shadow-md shadow-slate-100/75">
-            <div class="accordion-header md:px-8 px-5 py-2 flex flex-row items-center justify-between cursor-pointer border-b-2 border-slate-100/50"
+            <div class="accordion-header md:px-8 px-5 py-2 gap-3 flex flex-row items-center justify-between cursor-pointer border-b-2 border-slate-100/50"
                 @click="toggleAccordion(index)">
-                <span class="accordion-title font-semibold text-base">{{ item.title }}</span>
+                <span class="accordion-title font-semibold text-sm md:text-base">{{ item.title }}</span>
                 <span class="accordion-icon" :class="{ open: item.isOpen }">
                     {{ item.isOpen ? "-" : "+" }}
                 </span>
